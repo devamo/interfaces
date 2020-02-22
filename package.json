@@ -1,5 +1,5 @@
 {
-  "name": "interfaces",
+  "name": "@amodev/interfaces",
   "version": "1.0.0",
   "description": "Интерфейсы сущностей AmoDEV",
   "main": "index.js",
