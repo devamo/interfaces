@@ -1,6 +1,6 @@
 {
   "name": "@amodev/interfaces",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Интерфейсы сущностей AmoDEV",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
+  "types": "./index.d.ts",
   "files": [
     "dist/**/*"
   ],
