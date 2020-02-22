@@ -1,6 +1,6 @@
 {
   "name": "@amodev/interfaces",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Интерфейсы сущностей AmoDEV",
   "main": "index.js",
   "scripts": {
