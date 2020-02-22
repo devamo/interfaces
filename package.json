@@ -1,8 +1,8 @@
 {
   "name": "@amodev/interfaces",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "description": "Интерфейсы сущностей AmoDEV",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest --config jest.json --passWithNoTests",
     "build": "rimraf ./dist && tsc",
