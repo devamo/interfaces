@@ -1,17 +1,17 @@
 {
   "name": "@amodev/interfaces",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Интерфейсы сущностей AmoDEV",
   "main": "index.js",
   "scripts": {
     "test": "jest --config jest.json --passWithNoTests",
-    "build": "tsc",
+    "build": "rimraf ./dist && tsc",
     "prepare": "npm run build",
     "prepublishOnly": "npm test",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "types": "./index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/**/*"
   ],
