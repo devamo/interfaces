@@ -1,6 +1,6 @@
 {
   "name": "@amodev/interfaces",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Интерфейсы сущностей AmoDEV",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/devamo/interfaces/issues"
   },
-  "homepage": "https://github.com/devamo/interfaces#readme",
+  "homepage": "https://amodev.ru/faq/repositories/interfaces",
   "devDependencies": {
     "@types/jest": "^25.1.3",
     "jest": "^25.1.0",
