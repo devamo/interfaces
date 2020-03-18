@@ -22,24 +22,24 @@ export interface AmoAccount {
   current_user: number
   _embedded?: {
     users?: {
-      [id: string]: AmoUser[]
+      [id: string]: AmoUser
     }
     custom_fields?: {
       contacts?: {
-        [id: string]: AmoCustomField[]
+        [id: string]: AmoCustomField
       }
       companies?: {
-        [id: string]: AmoCustomField[]
+        [id: string]: AmoCustomField
       }
       leads?: {
-        [id: string]: AmoCustomField[]
+        [id: string]: AmoCustomField
       }
     }
     pipelines?: {
-      [id: string]: AmoPipeline[]
+      [id: string]: AmoPipeline
     }
     groups?: {
-      [id: string]: AmoGroup[]
+      [id: string]: AmoGroup
     }
   }
 }
