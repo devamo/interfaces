@@ -1,4 +1,4 @@
-export interface AccountInterface {
+export interface AmoDevAccount {
   uuid: string
   amoId: number
   ownerId: number

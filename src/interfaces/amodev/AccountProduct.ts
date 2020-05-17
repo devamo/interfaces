@@ -1,4 +1,4 @@
-export interface AccountProductInterface {
+export interface AmoDevAccountProduct {
   id: number
   access: object
   settings: object

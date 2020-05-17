@@ -1,4 +1,4 @@
-export interface ProductInterface {
+export interface AmoDevProduct {
   uuid: string
   ownerId: number
   title: string

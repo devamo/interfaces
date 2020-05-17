@@ -3,10 +3,16 @@
     "target": "es2015",
     "module": "commonjs",
     "declaration": true,
+    // "declarationMap": true,
+    "sourceMap": true,
     "outDir": "./dist",
-    "allowJs": true,
-    "strict": true
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "exclude": ["node_modules"]
 }
