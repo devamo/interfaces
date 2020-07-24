@@ -1,6 +1,6 @@
 {
   "name": "@amodev/interfaces",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "description": "Интерфейсы сущностей AmoDEV",
   "main": "dist/index.js",
   "scripts": {
