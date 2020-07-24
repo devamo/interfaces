@@ -1,4 +1,6 @@
-export interface AmoPipeline {
+import { AmoEntities } from './utils'
+
+export type AmoPipeline = {
   id: number
   account_id: number
   name: string
@@ -6,8 +8,8 @@ export interface AmoPipeline {
   is_main: boolean
   is_unsorted_on: boolean
   is_archive: boolean
-  is_predefined: boolean
-  entity_type: 'leads' | 'contacts' | 'companies' | 'customers' | 'segments' | 'catalogs'
+  is_predefined?: boolean
+  entity_type: AmoEntities
   _links: {
     self: {
       href: string

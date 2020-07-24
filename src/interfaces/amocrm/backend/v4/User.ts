@@ -1,33 +1,35 @@
-export interface AmoUser {
+export type AmoUserAccessRight = 'A' | 'D' | 'M' | 'G'
+
+export type AmoUser = {
   id: number
   name: string
   email: string
   lang: string
   rights: {
     leads: {
-      view: 'A' | 'D' | 'M' | 'G'
-      edit: 'A' | 'D' | 'M' | 'G'
-      add: 'A' | 'D' | 'M' | 'G'
-      delete: 'A' | 'D' | 'M' | 'G'
-      export: 'A' | 'D' | 'M' | 'G'
+      view: AmoUserAccessRight
+      edit: AmoUserAccessRight
+      add: AmoUserAccessRight
+      delete: AmoUserAccessRight
+      export: AmoUserAccessRight
     }
     contacts: {
-      view: 'A' | 'D' | 'M' | 'G'
-      edit: 'A' | 'D' | 'M' | 'G'
-      add: 'A' | 'D' | 'M' | 'G'
-      delete: 'A' | 'D' | 'M' | 'G'
-      export: 'A' | 'D' | 'M' | 'G'
+      view: AmoUserAccessRight
+      edit: AmoUserAccessRight
+      add: AmoUserAccessRight
+      delete: AmoUserAccessRight
+      export: AmoUserAccessRight
     }
     companies: {
-      view: 'A' | 'D' | 'M' | 'G'
-      edit: 'A' | 'D' | 'M' | 'G'
-      add: 'A' | 'D' | 'M' | 'G'
-      delete: 'A' | 'D' | 'M' | 'G'
-      export: 'A' | 'D' | 'M' | 'G'
+      view: AmoUserAccessRight
+      edit: AmoUserAccessRight
+      add: AmoUserAccessRight
+      delete: AmoUserAccessRight
+      export: AmoUserAccessRight
     }
     tasks: {
-      edit: 'A' | 'D' | 'M' | 'G'
-      delete: 'A' | 'D' | 'M' | 'G'
+      edit: AmoUserAccessRight
+      delete: AmoUserAccessRight
     }
     mail_access: boolean
     catalog_access: boolean

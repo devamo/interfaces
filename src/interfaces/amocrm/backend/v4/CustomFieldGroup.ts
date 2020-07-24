@@ -1,8 +1,10 @@
-export interface AmoCustomFieldGroup {
+import { AmoEntities } from './utils'
+
+export type AmoCustomFieldGroup = {
   id: string | number
   name: string
   is_predefined: boolean
-  entity_type: 'leads' | 'contacts' | 'companies' | 'customers' | 'segments' | 'catalogs'
+  entity_type: AmoEntities
   sort: number
   _links: {
     self: {

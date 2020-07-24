@@ -380,3 +380,59 @@ export const AmoLegacyFieldTypes = {
   category: 18,
   items: 16
 }
+
+export type AmoEntities = 'leads' | 'contacts' | 'companies' | 'customers' | 'segments' | 'catalogs'
+
+export type AmoApiResponse<Entity> = {
+  _page: number
+  _links: {
+    self: { href: string }
+    next: { href: string }
+  }
+  _embedded: {
+    [entity in AmoEntities]: Entity[]
+  }
+}
+
+export type AmoCustomFieldType =
+  | 'text'
+  | 'numeric'
+  | 'checkbox'
+  | 'select'
+  | 'multiselect'
+  | 'date'
+  | 'url'
+  | 'textarea'
+  | 'radiobutton'
+  | 'streetaddress'
+  | 'smart_address'
+  | 'birthday'
+  | 'legal_entity'
+  | 'date_time'
+  | 'price'
+  | 'category'
+  | 'items'
+
+export type AmoCustomFieldCode = 'EMAIL' | 'PHONE' | 'WEB' | 'ADDRESS' | 'POSITION'
+
+export type AmoCustomFieldTypeAddress = {
+  name: string | number | null
+  entity_type: string | number | null
+  vat_id: string | number | null
+  tax_registration_reason_code: string | number | null
+  address: string | number | null
+  kpp: string | number | null
+  external_uid: string | number | null
+}
+
+export type AmoEntityCustomField = {
+  field_id: number
+  field_name: string
+  field_code: AmoCustomFieldCode | null
+  field_type: AmoCustomFieldType
+  values: Array<{
+    value: string | number | AmoCustomFieldTypeAddress
+    enum_id: string | number
+    enum_code: string | number
+  }>
+}

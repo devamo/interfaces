@@ -1,6 +1,6 @@
 import { AmoCountriesIds } from './utils'
 
-export interface AmoAccount {
+export type AmoAccount = {
   id: number
   name: string
   subdomain: string
